@@ -1,5 +1,5 @@
 header img {
-  height: 80px;
+  height: 60px;
 }
 body {
   height: 125vh;
@@ -23,7 +23,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 80px;
+  height: 60px;
   display: flex;
   /* z-index: 1000; */
   align-items: center;
@@ -33,15 +33,16 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
+  padding: 1rem;
 }
 
 /* Add spacing between logo and nav-menu */
 .logo {
-  margin-right: 40px;  /* Add space between logo and menu items */
+  margin-right: 20px;  /* Add space between logo and menu items */
 }
 
 .logo a {
@@ -79,11 +80,12 @@ header {
   display: none;
   position: absolute;
   background-color: #333;
-  min-width: 160px;
+  min-width: 150px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
   top: 100%;
   left: 0;
+  padding: 0.5rem 0;
 }
 
 .dropdown-content a {
@@ -104,6 +106,7 @@ header {
 .hamburger {
   display: none;
   cursor: pointer;
+  margin-left: auto;
 }
 
 .bar {
@@ -333,6 +336,14 @@ p {
   .pricing-features li {
       font-size: 0.9rem;
   }
+
+  .flex-container {
+    flex-direction: column;  /* Stack columns on mobile */
+  }
+
+.grid-container {
+    grid-template-columns: 1fr;  /* Single column on mobile */
+  }
 }
 
 @media (max-width: 480px) {
@@ -363,15 +374,6 @@ p {
 }
 
 /* Responsive design for both options */
-@media (max-width: 768px) {
-  .flex-container {
-      flex-direction: column;  /* Stack columns on mobile */
-  }
-
-  .grid-container {
-      grid-template-columns: 1fr;  /* Single column on mobile */
-  }
-}
 
 /* About page styling */
 .about-content {
@@ -416,12 +418,13 @@ p {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 80px;
+    top: 70px;
+    gap: 0;
     flex-direction: column;
     background-color: #333;
     width: 100%;
     margin-left: 0;  /* Remove margin on mobile */
-    text-align: left;  /* Align text left */
+    text-align: center;  /* Align text left */
     padding: 1rem;
     transition: 0.3s;
   }
@@ -442,6 +445,6 @@ p {
 
   .hamburger {
     display: block;
-    margin-left: auto;  /* Push hamburger to the right */
+    /* margin-left: auto;  Push hamburger to the right */
   }
 }
