@@ -13,10 +13,9 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  height: 70px;
   display: flex;
   /* z-index: 1000; */
-  align-items: center;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
   font-size: 0.9rem;
 }
@@ -27,16 +26,12 @@ header {
   align-items: center;
   margin: 0 auto;
   padding: 1rem;
+  background-color: #333;
 }
 
 /* Add spacing between logo and nav-menu */
 .logo {
   margin-right: 20px;  /* Add space between logo and menu items */
-}
-
-.logo a {
-  color: white;
-  font-size: 1.5rem;
 }
 
 .nav-menu {
@@ -62,8 +57,9 @@ header {
 }
 
 .dropdown-menu {
-  display: block;
+  display: none;
   position: absolute;
+  list-style: none;
   background-color: #333;
   min-width: 150px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
@@ -71,10 +67,6 @@ header {
   top: 100%;
   left: 0;
   padding: 0.5rem 0;
-}
-
-.dropdown-menu a:hover {
-  background-color: #444;
 }
 
 .dropdown:hover .dropdown-menu {
