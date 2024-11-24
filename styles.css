@@ -356,6 +356,7 @@ input {
 .pricing-features i {
   color: #28a745;
   margin-right: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .pricing-footer {
@@ -427,19 +428,22 @@ input {
   }
 
   .pricing-tile {
-      padding: 1.5rem;
+    padding: 1.5rem;
   }
 
   .price {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .currency {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .pricing-features li {
-      font-size: 0.9rem;
+    font-size: 1.2rem;
+  }
+  .pricing-container {
+    display: block;
   }
 
   .flex-container {
@@ -449,26 +453,35 @@ input {
   .grid-container {
     grid-template-columns: 1fr;  /* Single column on mobile */
   }
+  .schedule-container {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 480px) {
   .pricing-container {
-      padding: 1rem;
+    display: block;
+    padding: 1rem;
   }
 
   .pricing-tile {
-      padding: 1rem;
+    padding: 1rem;
   }
 
   .price {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
+  .pricing-features li {
+    font-size: 1rem;
+  }
+
   body {
     padding: 10px;
+    margin: 0 auto;
   }
 
   .payment-container {
-      padding: 1rem;
+    padding: 1rem;
   }
 }
 /* Option 1: Flexbox styling */
