@@ -1,0 +1,386 @@
+header img {
+  height: 80px;
+}
+body {
+  height: 125vh;
+  background-color: rgb(12, 83, 121);
+  background-size: cover;
+  font-family: sans-serif;
+  margin-top: 80px;
+  padding: 30px;
+}
+
+main {
+  color: white;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #333;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  /* z-index: 1000; */
+  align-items: center;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #00bcd4;
+}
+
+/* Dropdown Styling */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #444;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+button {
+  border: black;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.button-green {
+  background-color: rgb(43, 162, 135);
+}
+.button-orange {
+  background-color: rgb(237, 145, 17);
+}
+.button-blue {
+  background-color: rgb(110, 169, 207);
+  color: white;
+}
+.button-pink {
+  background-color: rgb(235, 98, 162);
+}
+.button-yellow {
+  background-color: rgb(225, 210, 70);
+}
+.button-purple {
+  background-color: rgb(143, 78, 169);
+}
+.button-darkblue {
+  background-color: rgb(43, 105, 149);
+}
+.button-link-green {
+  background-color: rgb(43, 162, 135);
+  display: inline-block;
+  padding: 12px 24px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button-link-orange {
+  background-color: rgb(237, 145, 17);
+  display: inline-block;
+  padding: 12px 24px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons-group {
+  margin-top: 60px;
+  text-align:center;
+  align-content:center;
+  display: block;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+* {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+h3 {
+  font-size: 40px;
+  color: rgb(143, 181, 219);
+  text-align: center;
+}
+h4 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(235, 98, 162);
+}
+h5 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: normal;
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+.button-schedule {
+  color: rgb(43, 75, 162);
+}
+
+p {
+  font-size: 20px;
+}
+
+.pricing-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.pricing-tile {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.pricing-tile:hover {
+  transform: translateY(-5px);
+}
+
+.pricing-header {
+  margin-bottom: 2rem;
+}
+
+.pricing-header h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 2.5rem;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.currency {
+  font-size: 1.5rem;
+  vertical-align: super;
+}
+
+.period {
+  font-size: 1rem;
+  color: #666;
+}
+
+.pricing-features {
+  margin: 2rem 0;
+}
+
+.pricing-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-features li {
+  padding: 0.5rem 0;
+  color: #666;
+}
+
+.pricing-features i {
+  color: #28a745;
+  margin-right: 0.5rem;
+}
+
+.pricing-footer {
+  margin-top: 2rem;
+}
+
+.booking-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pricing-tile {
+      padding: 1.5rem;
+  }
+
+  .price {
+      font-size: 2rem;
+  }
+
+  .currency {
+      font-size: 1.2rem;
+  }
+
+  .pricing-features li {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-container {
+      padding: 1rem;
+  }
+
+  .pricing-tile {
+      padding: 1rem;
+  }
+
+  .price {
+      font-size: 1.8rem;
+  }
+}
+
+/* Option 1: Flexbox styling */
+.flex-container {
+  display: flex;
+  gap: 2rem;  /* Space between columns */
+  padding: 20px;
+}
+
+.flex-container .column {
+  flex: 1;  /* Each column takes equal width */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Responsive design for both options */
+@media (max-width: 768px) {
+  .flex-container {
+      flex-direction: column;  /* Stack columns on mobile */
+  }
+
+  .grid-container {
+      grid-template-columns: 1fr;  /* Single column on mobile */
+  }
+}
+
+/* About page styling */
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  line-height: 1.6;
+}
+
+.about-content p {
+  margin-bottom: 1.5em;
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* For better readability on dark backgrounds */
+@media (prefers-color-scheme: dark) {
+  .about-content p {
+      color: #f5f5f5;
+  }
+}
+.image-column {
+  width: 100%;
+  margin: 20px 0;
+}
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px; /* Optional: rounded corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+}
