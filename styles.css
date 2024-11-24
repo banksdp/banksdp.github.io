@@ -33,10 +33,15 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Add spacing between logo and nav-menu */
+.logo {
+  margin-right: 40px;  /* Add space between logo and menu items */
 }
 
 .logo a {
@@ -50,6 +55,8 @@ header {
   display: flex;
   list-style: none;
   gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-menu a {
@@ -400,52 +407,60 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;  /* On mobile, keep space between logo and hamburger */
+  }
+
+  .logo {
+    margin-right: 0;  /* Remove margin on mobile */
+  }
+
   .hamburger {
-      display: block;
+    display: block;
   }
 
   .hamburger.active .bar:nth-child(2) {
-      opacity: 0;
+    opacity: 0;
   }
 
   .hamburger.active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   .nav-menu {
-      position: fixed;
-      left: -100%;
-      top: 80px;
-      gap: 0;
-      flex-direction: column;
-      background-color: #333;
-      width: 100%;
-      text-align: center;
-      transition: 0.3s;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: -100%;
+    top: 80px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
   .nav-menu.active {
-      left: 0;
+    left: 0;
   }
 
   .nav-menu li {
-      margin: 16px 0;
+    margin: 16px 0;
   }
 
   /* Adjust dropdown for mobile */
   .dropdown-content {
-      position: static;
-      display: none;
-      background-color: #444;
-      width: 100%;
+    position: static;
+    display: none;
+    background-color: #444;
+    width: 100%;
   }
 
   .dropdown.active .dropdown-content {
-      display: block;
+    display: block;
   }
 }
