@@ -9,22 +9,31 @@
         <header>
             <nav class="navbar">
                 <div class="logo">
-                    <a href="/" title="Return to Homepage" id="logo">
-                        <img src="img/owl_logo.svg">
+                    <a href="/" title="Return to Homepage">
+                        <img src="img/owl_logo.svg" alt="Banks Tutoring Logo">
+                    </a>
                 </div>
+                <!-- Add hamburger menu button -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <!-- Add navigation menu -->
                 <ul class="nav-menu">
-                    <li><a href="/schedule_session.html">Schedule a Session</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropbtn">Services</a>
-                        <div class="dropdown-content">
-                            <a href="/regular_math_curriculum.html">Regular Math Curriculum</a>
-                            <a href="/standardized_exam_prep.html">Standardized Exam Prep</a>
-                            <a href="/private_independent_math.html">Private Independent Math</a>
-                        </div>
+                    <li class="nav-item"><a href="/schedule_session.html">Schedule a Session</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-link" href="/regular_math_curriculum.html">Regular Math Curriculum</a></li>
+                            <li><a class="dropdown-link" href="/standardized_exam_prep.html">Standardized Exam Prep</a></li>
+                            <li><a class="dropdown-link"href="/private_independent_math.html">Private Independent Math</a></li>
+                        </ul>
                     </li>
-                    <li><a href="/about.html">About</a></li>
+                    <li class="nav-item"><a href="/about.html">About</a></li>
                 </ul>
             </nav>
+            <script src="script.js"></script>
         </header>
         <main>
             <h1>Schedule a Session</h1>
@@ -56,8 +65,10 @@
                         </div>
                     </div>
                     <div class="column">
+                        <br>
                         <p>Please choose any available slot below.</pp>
                         <p>If you don't see a time that is convenient for you, please feel free to call me or send me an email. I would be more than happy to accommodate you.</p>
+                        <br>
                         <div class="contact-buttons">
                             <button class="button button-blue" onclick="window.location.href='mailto:bankspiccinini@gmail.com'">
                                 <i class="fa fa-envelope"></i> Email Banks
@@ -67,8 +78,7 @@
                             </button>
                             <!-- <a href="mailto:bankspiccinini@gmail.com" class="button button-contact">Email Banks</a> -->
                         </div>
-                        <p>If you know anyone who would be interested or you think needs tutoring, please fee free to have them reach out to me as well.
-                        </p>
+                        <br>
                     </div>
                 </div>
             </section>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banks Tutoring</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/" title="Return to Homepage">
+                    <img src="img/owl_logo.svg" alt="Banks Tutoring Logo">
+                </a>
+            </div>
+            <!-- Add hamburger menu button -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- Add navigation menu -->
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/schedule_session.html">Schedule a Session</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-link" href="/regular_math_curriculum.html">Regular Math Curriculum</a></li>
+                        <li><a class="dropdown-link" href="/standardized_exam_prep.html">Standardized Exam Prep</a></li>
+                        <li><a class="dropdown-link"href="/private_independent_math.html">Private Independent Math</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+        <script src="script.js"></script>
+    </header>
+    <main>
+        <h3>Tutoring Payment</h3>
+        <br>
+        <div class="payment-container">
+            <p style="color: #333;">
+                Payment is sent via Venmo to my wife Odaiclet. Please enter the number of hours you would like to purchase and click the button below to pay.
+            </p>
+        
+            <div class="calculator">
+                <label for="hours">Number of Hours:</label>
+                <input type="number" id="hours" min="0.5" step="0.5" value="1">
+                
+                <div class="total">
+                    Total Amount: $<span id="total">120</span>
+                </div>
+
+                <a href="#" id="venmoLink" class="venmo-button">Pay with Venmo</a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const hoursInput = document.getElementById('hours');
+        const totalSpan = document.getElementById('total');
+        const venmoLink = document.getElementById('venmoLink');
+        const RATE = 120; // $120 per hour
+
+        function updateTotal() {
+            const hours = parseFloat(hoursInput.value) || 0;
+            const total = (hours * RATE) /*.toFixed(2);*/
+            totalSpan.textContent = total;
+            
+            // Update Venmo link with amount
+            const venmoAmount = Math.round(total);
+            const timestamp = new Date().getTime(); // Add timestamp to prevent caching
+            venmoLink.href = `https://venmo.com/?txn=pay&audience=private&recipients=odaiclet&amount=${venmoAmount}&note=Tutoring%20for%20${hours}%20hours`;
+            venmoLink.setAttribute('rel', 'noopener noreferrer');
+            venmoLink.setAttribute('target', '_blank');
+        }
+
+        // Clear any existing cache when page loads
+        window.onload = function() {
+            venmoLink.href = '';
+        }
+
+        hoursInput.addEventListener('input', updateTotal);
+        updateTotal(); // Initialize
+    </script>
+</body>
+</html>
