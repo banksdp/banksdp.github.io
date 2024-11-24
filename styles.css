@@ -101,10 +101,13 @@ header {
 
 body {
   height: 125vh;
+  align-items: center;
   background-color: rgb(12, 83, 121);
   background-size: cover;
   font-family: sans-serif;
   margin-top: 80px;
+  margin-left: auto;    /* Add this */
+  margin-right: auto;
   padding: 30px;
   line-height: 1.6;
   padding: 20px;
@@ -113,6 +116,10 @@ body {
 
 main {
   color: white;
+  width: 100%;         /* Add this */
+  max-width: 800px;    /* Add this */
+  margin: 0 auto;      /* Add this */
+  padding: 0 20px;     /* Add this */
 }
 
 header img {
@@ -223,6 +230,10 @@ h5 {
 }
 
 .container {
+  /* width: 100%;
+  max-width: 800px;
+  margin: 0 auto;    
+  padding: 0 20px; */
   text-align: center;
 }
 
@@ -464,11 +475,10 @@ input {
 .flex-container {
   display: flex;
   gap: 2rem;  /* Space between columns */
-  padding: 20px;
+  padding: 10px;
 }
 .flex-container .column {
   flex: 1;  /* Each column takes equal width */
-  padding: 20px;
   border-radius: 8px;
 }
 
