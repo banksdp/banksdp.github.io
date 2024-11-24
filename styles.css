@@ -478,6 +478,7 @@ input {
   body {
     padding: 10px;
     margin: 0 auto;
+    top: 40px;
   }
 
   .payment-container {
