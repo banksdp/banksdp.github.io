@@ -408,7 +408,7 @@ p {
 
 @media screen and (max-width: 768px) {
   .navbar {
-    justify-content: space-between;  /* On mobile, keep space between logo and hamburger */
+    justify-content: flex-start;  /* On mobile, keep space between logo and hamburger */
   }
 
   .logo {
