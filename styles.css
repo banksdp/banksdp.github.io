@@ -85,7 +85,7 @@ header {
 }
 
 .hamburger {
-  display: flex;
+  display: none;
   cursor: pointer;
   margin-left: auto;
 }
