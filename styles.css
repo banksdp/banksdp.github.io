@@ -380,11 +380,16 @@ input {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  main {
-    padding: 40px;
+  body {
+    padding: 15px;
     margin: 0 auto;
     top: 60px;
+    margin-top: 100px;
   }
+  main {
+    padding: 10px;
+  }
+  
   .hamburger {
     display: block;
   }
@@ -481,9 +486,7 @@ input {
   }
 
   body {
-    padding: 10px;
-    margin: 0 auto;
-    top: 60px;
+    margin-top: 100px;
   }
 
   .payment-container {
