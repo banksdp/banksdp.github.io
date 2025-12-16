@@ -3,57 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seguros de Vida | Banks Piccinini</title>
+    <title>Banks Piccinini - Seguro de Vida</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header, main, footer {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1, h2, h3, h4 {
+            color: #007b7f;
+        }
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .services, .about, .contact, .privacy {
+            margin: 40px 0;
+        }
+        .services .service-item {
+            background: #f1f1f1;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+        .contact-buttons button {
+            background-color: #007b7f;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-buttons button i {
+            margin-right: 8px;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: 0;
+            border-radius: 10px;
+        }
+        .family-img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .privacy {
+            font-size: 0.9em;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
+    <header class="hero">
+        <img src="https://i.imgur.com/RBMa6G3.jpeg" alt="Foto de Banks Piccinini">
+        <h1>💰 Protege el futuro de tu familia con un seguro de vida</h1>
+        <p>Agenda tu consulta gratuita y descubre cómo asegurar la tranquilidad de tus seres queridos 👨‍👩‍👧‍👦</p>
+        <a href="https://calendly.com/bankspiccinini/cita_para_seguro_de_vida?embed=true">
+            <button>📅 Agenda tu consulta gratuita</button>
+        </a>
+    </header>
 
-    <main style="padding: 20px; max-width: 900px; margin: auto;">
-
-        <!-- Hero Section -->
-        <section id="hero" style="text-align: center; margin-bottom: 40px;">
-            <h1 style="font-size: 50px;">Agenda tu Consulta de Seguro de Vida</h1>
-            <p style="font-size: 18px;">Elige un horario disponible a continuación o contáctame directamente.</p>
-        </section>
-
-        <!-- Calendly Scheduling Section -->
-        <section id="schedule" style="margin-bottom: 40px;">
-            <iframe src="https://calendly.com/bankspiccinini/cita_para_seguro_de_vida?embed=true" 
-                    width="100%" height="600px" frameborder="0"></iframe>
-        </section>
-
-        <!-- Pricing / Info Section -->
-        <section id="info" style="margin-bottom: 40px;">
-            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-                
-                <div style="flex: 1 1 300px; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
-                    <h2>Consulta Personalizada</h2>
-                    <p><strong>Precio:</strong> $120 / hora</p>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Atención 100% personalizada</li>
-                        <li><i class="fas fa-check"></i> Explicación clara de opciones</li>
-                        <li><i class="fas fa-check"></i> Orientación sobre la mejor póliza para tu familia</li>
-                    </ul>
-                </div>
-
-                <div style="flex: 1 1 300px; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
-                    <h2>Contacto Directo</h2>
-                    <p>Si no encuentras un horario conveniente, llámame o envíame un correo. Estoy disponible para ayudarte.</p>
-                    <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;">
-                        <button class="button button-blue" onclick="window.location.href='mailto:bankspiccinini@gmail.com'">
-                            <i class="fa fa-envelope"></i> Enviar Email
-                        </button>
-                        <button class="button button-blue" onclick="window.location.href='tel:415-342-7881'">
-                            <i class="fa fa-phone"></i> Llamar Ahora
-                        </button>
-                    </div>
-                </div>
-
+    <main>
+        <section class="services">
+            <h2>Servicios que ofrezco</h2>
+            <div class="service-item">
+                <h3>🕊️ Seguro de Vida de Gastos Finales</h3>
+                <p>Protege a tu familia de los gastos inesperados y asegura tranquilidad económica.</p>
+            </div>
+            <div class="service-item">
+                <h3>📈 Seguros IUL y Estructuras Mayores</h3>
+                <p>Opciones para estructurar pólizas más grandes y proteger tu patrimonio a largo plazo.</p>
             </div>
         </section>
 
-    </main>
+        <section class="about">
+            <h2>Sobre mí</h2>
+            <img src="https://i.imgur.com/mvnuELr_d.webp" alt="Familia feliz protegida por seguro de vida" class="family-img">
+            <p>Hola, soy <strong>Banks Piccinini</strong>, agente de seguros de vida licenciado (NPN: 21783745). Vivo en Chicago, IL, y puedo ayudar a clientes en todo el país. Ayudo a familias a proteger su futuro financiero con soluciones claras y accesibles. Mi pasión es asegurar que cada familia pueda vivir tranquila sabiendo que su bienestar está protegido.</p>
+        </section>
 
+        <section class="contact">
+            <h2>Contacto</h2>
+            <p>Si quieres más información o agendar tu consulta, contáctame:</p>
+            <div class="contact-buttons">
+                <button onclick="window.location.href='mailto:bankspiccinini@gmail.com'">
+                    <i class="fa fa-envelope"></i> Email
+                </button>
+                <button onclick="window.location.href='tel:4153427881'">
+                    <i class="fa fa-phone"></i> Llamar
+                </button>
+            </div>
+            <h3>Calendly para agendar tu cita</h3>
+            <iframe src="https://calendly.com/bankspiccinini/cita_para_seguro_de_vida?embed=true"></iframe>
+        </section>
+
+        <section class="privacy">
+            <h2>Política de Privacidad</h2>
+            <p>Respetamos tu privacidad. Cualquier información que proporciones, incluyendo tu nombre y número de teléfono, solo se usará para contactarte respecto a nuestros servicios. No vendemos ni compartimos tu información con terceros.</p>
+        </section>
+    </main>
 </body>
 </html>
