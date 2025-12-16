@@ -1,64 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <head>
-        <title>Seguros de Vida | Banks Piccinini</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="/" title="Volver al Inicio">
-                        <img src="img/owl_logo.svg" alt="Logo de Seguros de Vida">
-                    </a>
+    <title>Seguros de Vida | Banks Piccinini</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <main style="padding: 20px; max-width: 900px; margin: auto;">
+
+        <!-- Hero Section -->
+        <section id="hero" style="text-align: center; margin-bottom: 40px;">
+            <h1 style="font-size: 50px;">Agenda tu Consulta de Seguro de Vida</h1>
+            <p style="font-size: 18px;">Elige un horario disponible a continuación o contáctame directamente.</p>
+        </section>
+
+        <!-- Calendly Scheduling Section -->
+        <section id="schedule" style="margin-bottom: 40px;">
+            <iframe src="https://calendly.com/bankspiccinini/cita_para_seguro_de_vida?embed=true" 
+                    width="100%" height="600px" frameborder="0"></iframe>
+        </section>
+
+        <!-- Pricing / Info Section -->
+        <section id="info" style="margin-bottom: 40px;">
+            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                
+                <div style="flex: 1 1 300px; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+                    <h2>Consulta Personalizada</h2>
+                    <p><strong>Precio:</strong> $120 / hora</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Atención 100% personalizada</li>
+                        <li><i class="fas fa-check"></i> Explicación clara de opciones</li>
+                        <li><i class="fas fa-check"></i> Orientación sobre la mejor póliza para tu familia</li>
+                    </ul>
                 </div>
 
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                <div style="flex: 1 1 300px; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+                    <h2>Contacto Directo</h2>
+                    <p>Si no encuentras un horario conveniente, llámame o envíame un correo. Estoy disponible para ayudarte.</p>
+                    <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;">
+                        <button class="button button-blue" onclick="window.location.href='mailto:bankspiccinini@gmail.com'">
+                            <i class="fa fa-envelope"></i> Enviar Email
+                        </button>
+                        <button class="button button-blue" onclick="window.location.href='tel:415-342-7881'">
+                            <i class="fa fa-phone"></i> Llamar Ahora
+                        </button>
+                    </div>
                 </div>
 
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="/consulta.html">Consulta Gratis</a></li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Servicios</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-link" href="/seguro-vida-temporal.html">Seguro de Vida Temporal</a></li>
-                            <li><a class="dropdown-link" href="/seguro-vida-permanente.html">Seguro de Vida Permanente</a></li>
-                            <li><a class="dropdown-link" href="/gastos-finales.html">Gastos Finales</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a href="/sobre-mi.html">Sobre Mí</a></li>
-                </ul>
-            </nav>
-            <script src="script.js"></script>
-        </header>
+            </div>
+        </section>
 
-        <main>
-            <h1>Seguros de Vida con Banks Piccinini</h1>
-            <h5>Protege el futuro de tu familia hoy &#128515;</h5>
-            <br>
-            <div class="container">
-                <a href="consulta.html">
-                    <button class="button button-schedule">Agenda una Consulta Gratuita</button>
-                </a>
-            </div>
-            <br>
-            <h3>Servicios Ofrecidos</h3>
-            <div class="buttons-group">
-                <a href="/seguro-vida-temporal.html">
-                    <button class="button button-green">Seguro de Vida Temporal</button>
-                </a>
-                <a href="/seguro-vida-permanente.html">
-                    <button class="button button-orange">Seguro de Vida Permanente</button>
-                </a>
-                <a href="/gastos-finales.html">
-                    <button class="button button-pink">Cobertura de Gastos Finales</button>
-                </a>
-            </div>
-        </main>
-    </body>
+    </main>
+
+</body>
 </html>
