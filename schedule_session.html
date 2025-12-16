@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
-        <title>Banks Tutoring</title>
+        <title>Seguros de Vida | Banks Piccinini</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </head>
@@ -11,36 +11,38 @@
         <header>
             <nav class="navbar">
                 <div class="logo">
-                    <a href="/" title="Return to Homepage">
-                        <img src="img/owl_logo.svg" alt="Banks Tutoring Logo">
+                    <a href="/" title="Volver al Inicio">
+                        <img src="img/owl_logo.svg" alt="Logo de Seguros de Vida">
                     </a>
                 </div>
-                <!-- Add hamburger menu button -->
                 <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-                <!-- Add navigation menu -->
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="/schedule_session.html">Schedule a Session</a></li>
+                    <li class="nav-item"><a href="/consulta.html">Agenda tu Consulta</a></li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Services</a>
+                        <a href="#" class="nav-link">Servicios</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-link" href="/regular_math_curriculum.html">Regular Math Curriculum</a></li>
-                            <li><a class="dropdown-link" href="/standardized_exam_prep.html">Standardized Exam Prep</a></li>
-                            <li><a class="dropdown-link"href="/private_independent_math.html">Private Independent Math</a></li>
+                            <li><a class="dropdown-link" href="/seguro-vida-temporal.html">Seguro de Vida Temporal</a></li>
+                            <li><a class="dropdown-link" href="/seguro-vida-permanente.html">Seguro de Vida Permanente</a></li>
+                            <li><a class="dropdown-link" href="/gastos-finales.html">Gastos Finales</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="/about.html">About</a></li>
+                    <li class="nav-item"><a href="/sobre-mi.html">Sobre Mí</a></li>
                 </ul>
             </nav>
             <script src="script.js"></script>
         </header>
+
         <main>
-            <h1 style="font-size: 50px;">Schedule a Session</h1>
-            <h5>Please choose any available slot below.</h5><br>
-            <iframe src="https://koalendar.com/e/schedule-banks-tutoring?embed=true" width="100%" height="600px" frameborder="0"></iframe>
+            <h1 style="font-size: 50px;">Agenda tu Consulta</h1>
+            <h5>Por favor elige un horario disponible a continuación.</h5><br>
+            
+            <!-- Updated Calendly iframe -->
+            <iframe src="https://calendly.com/bankspiccinini/cita_para_seguro_de_vida?embed=true" width="100%" height="600px" frameborder="0"></iframe>
+            
             <section class="container-sm">
                 <div class="flex-container">
                     <div class="column">
@@ -50,37 +52,31 @@
                                     <div class="price">
                                         <span class="currency">$</span>
                                         <span class="amount">120</span>
-                                        <span class="period">/hour</span>
+                                        <span class="period">/hora</span>
                                     </div>
                                 </div>
                                 <div class="pricing-features">
                                     <ul>
-                                        <li><i class="fas fa-check"></i> Personalized attention</li>
-                                        <li><i class="fas fa-check"></i> Judgement-free & empathy focused</li>
-                                        <li><i class="fas fa-check"></i> Fun and engaging tutoring</li>
+                                        <li><i class="fas fa-check"></i> Atención personalizada</li>
+                                        <li><i class="fas fa-check"></i> Sin juicios y con enfoque empático</li>
+                                        <li><i class="fas fa-check"></i> Explicaciones claras y sencillas</li>
                                     </ul>
                                 </div>
-                                <!-- <div class="pricing-footer">
-                                    <button class="booking-button" onclick="sendEmail()">
-                                        Book Now
-                                    </button>
-                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="column">
                         <div class="schedule-container">
                             <p>
-                            If you don't see a time that is convenient for you, please feel free to call me or send me an email. I would be more than happy to try and accommodate you.</p>
+                            Si no encuentras un horario conveniente, no dudes en llamarme o enviarme un correo electrónico. Con gusto intentaré acomodar tu horario.</p>
                             <br>
                             <div class="contact-buttons">
                                 <button class="button button-blue" onclick="window.location.href='mailto:bankspiccinini@gmail.com'">
-                                    <i class="fa fa-envelope"></i> Email Banks
+                                    <i class="fa fa-envelope"></i> Enviar Email
                                 </button>
                                 <button class="button button-blue" onclick="window.location.href='tel:415-342-7881'">
-                                    <i class="fa fa-phone"></i> Call Banks
+                                    <i class="fa fa-phone"></i> Llamar Ahora
                                 </button>
-                                <!-- <a href="mailto:bankspiccinini@gmail.com" class="button button-contact">Email Banks</a> -->
                             </div>
                         </div>
                     </div>
@@ -89,4 +85,3 @@
         </main>
     </body>
 </html>
-
